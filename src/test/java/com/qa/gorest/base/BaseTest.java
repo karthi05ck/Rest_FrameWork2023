@@ -8,6 +8,7 @@ import org.testng.annotations.Parameters;
 import com.qa.gorest.client.RestClient;
 import com.qa.gorest.configuration.ConfigurationManager;
 
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
 
 public class BaseTest {
@@ -20,7 +21,8 @@ public class BaseTest {
 	@BeforeTest
 	public void setUp(String baseURI) {
 		
-		//RestAssured.filters(new AllureRestAssured());
+		RestAssured.filters(new AllureRestAssured());
+		
 		
 		config = new ConfigurationManager();
 		prop = config.init_prop();
