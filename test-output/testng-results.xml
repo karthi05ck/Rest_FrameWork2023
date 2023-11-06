@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-06T18:11:24 IST" name="API Regression Suite" finished-at="2023-11-06T18:11:28 IST" duration-ms="3560">
+  <suite started-at="2023-11-06T18:26:25 IST" name="API Regression Suite" finished-at="2023-11-06T18:26:30 IST" duration-ms="4270">
     <groups>
     </groups>
-    <test started-at="2023-11-06T18:11:24 IST" name="Go Rest API Test" finished-at="2023-11-06T18:11:27 IST" duration-ms="2824">
+    <test started-at="2023-11-06T18:26:25 IST" name="Go Rest API Test" finished-at="2023-11-06T18:26:29 IST" duration-ms="3332">
       <class name="com.qa.gorest.tests.GetUserTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.gorest.tests.GetUserTest@5b239d7d]" started-at="2023-11-06T18:11:24 IST" name="setUp" finished-at="2023-11-06T18:11:25 IST" duration-ms="562" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.gorest.tests.GetUserTest@5158b42f]" started-at="2023-11-06T18:26:25 IST" name="setUp" finished-at="2023-11-06T18:26:26 IST" duration-ms="529" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="getAllUsersTst()[pri:0, instance:com.qa.gorest.tests.GetUserTest@5b239d7d]" started-at="2023-11-06T18:11:25 IST" name="getAllUsersTst" finished-at="2023-11-06T18:11:27 IST" duration-ms="1516" status="PASS">
+        <test-method signature="getAllUsersTst()[pri:0, instance:com.qa.gorest.tests.GetUserTest@5158b42f]" started-at="2023-11-06T18:26:26 IST" name="getAllUsersTst" finished-at="2023-11-06T18:26:28 IST" duration-ms="2084" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAllUsersTst -->
-        <test-method signature="getUserTest()[pri:0, instance:com.qa.gorest.tests.GetUserTest@5b239d7d]" started-at="2023-11-06T18:11:27 IST" name="getUserTest" finished-at="2023-11-06T18:11:27 IST" duration-ms="477" status="FAIL">
+        <test-method signature="getUserTest()[pri:0, instance:com.qa.gorest.tests.GetUserTest@5158b42f]" started-at="2023-11-06T18:26:28 IST" name="getUserTest" finished-at="2023-11-06T18:26:28 IST" duration-ms="421" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -89,7 +89,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserTest -->
-        <test-method signature="getUserWithQueryParamsTest()[pri:0, instance:com.qa.gorest.tests.GetUserTest@5b239d7d]" started-at="2023-11-06T18:11:27 IST" name="getUserWithQueryParamsTest" finished-at="2023-11-06T18:11:27 IST" duration-ms="231" status="FAIL">
+        <test-method signature="getUserWithQueryParamsTest()[pri:0, instance:com.qa.gorest.tests.GetUserTest@5158b42f]" started-at="2023-11-06T18:26:28 IST" name="getUserWithQueryParamsTest" finished-at="2023-11-06T18:26:29 IST" duration-ms="256" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -156,9 +156,9 @@ at java.base/java.lang.Thread.run(Thread.java:832)
         </test-method> <!-- getUserWithQueryParamsTest -->
       </class> <!-- com.qa.gorest.tests.GetUserTest -->
     </test> <!-- Go Rest API Test -->
-    <test started-at="2023-11-06T18:11:27 IST" name="Circuit API Test" finished-at="2023-11-06T18:11:28 IST" duration-ms="663">
+    <test started-at="2023-11-06T18:26:29 IST" name="Circuit API Test" finished-at="2023-11-06T18:26:30 IST" duration-ms="893">
       <class name="com.qa.gorest.tests.CircuitTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.gorest.tests.CircuitTest@351d00c0]" started-at="2023-11-06T18:11:27 IST" name="setUp" finished-at="2023-11-06T18:11:27 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.gorest.tests.CircuitTest@34a3d150]" started-at="2023-11-06T18:26:29 IST" name="setUp" finished-at="2023-11-06T18:26:29 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -169,7 +169,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="getCircuitTest()[pri:0, instance:com.qa.gorest.tests.CircuitTest@351d00c0]" started-at="2023-11-06T18:11:27 IST" name="getCircuitTest" finished-at="2023-11-06T18:11:28 IST" duration-ms="647" status="PASS">
+        <test-method signature="getCircuitTest()[pri:0, instance:com.qa.gorest.tests.CircuitTest@34a3d150]" started-at="2023-11-06T18:26:29 IST" name="getCircuitTest" finished-at="2023-11-06T18:26:30 IST" duration-ms="885" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCircuitTest -->
