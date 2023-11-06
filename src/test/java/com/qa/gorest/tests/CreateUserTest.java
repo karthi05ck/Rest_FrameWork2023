@@ -31,6 +31,7 @@ public class CreateUserTest {
 		.then().log().all()
 		.assertThat().statusCode(200)
 		.and().body("id", equalTo(userId));
+		//Testing from home
 	}
 
 }
