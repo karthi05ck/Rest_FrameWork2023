@@ -16,13 +16,24 @@
 		<listener
 			class-name="com.qa.opencart.listeners.AnnotationTransformer" />-->
 	
-
+<listeners>
+		<listener
+			class-name="com.qa.gorest.listeners.ExtentReportListener" />
+			
+	</listeners>
 	
 	
-	<test name="Go Rest API Test">
+	<test name="Go Rest get API Test">
 	<parameter name="baseURI" value="https://gorest.co.in" />
 		<classes>
 			<class name="com.qa.gorest.tests.GetUserTest" />
+		</classes>
+	</test>
+	
+	<test name="Go Rest create API Test">
+	<parameter name="baseURI" value="https://gorest.co.in" />
+		<classes>
+			<class name="com.qa.gorest.tests.CreateUserTest" />
 		</classes>
 	</test>
 	
