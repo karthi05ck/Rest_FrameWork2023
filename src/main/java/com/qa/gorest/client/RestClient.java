@@ -20,6 +20,7 @@ public class RestClient {
 	private static RequestSpecBuilder specBuilder;
 	private Properties prop;
 	private String baseURI;
+	private boolean isAuthorizationHeaderAdded = false;
 //	static {
 //		specBuilder = new RequestSpecBuilder();
 //	}
@@ -32,7 +33,9 @@ public class RestClient {
 	}
 	
 	public void addAuthorizationHeader() {
+		if(!isAuthorizationHeaderAdded)
 		specBuilder.addHeader("Authorization", "Bearer " + prop.getProperty("tokenId"));
+		isAuthorizationHeaderAdded = true;
 		}
 	
 	private void setRequestContentType(String contentType) {

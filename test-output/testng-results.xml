@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-06T18:26:25 IST" name="API Regression Suite" finished-at="2023-11-06T18:26:30 IST" duration-ms="4270">
+  <suite started-at="2023-11-07T18:15:51 IST" name="API Regression Suite" finished-at="2023-11-07T18:16:00 IST" duration-ms="8812">
     <groups>
     </groups>
-    <test started-at="2023-11-06T18:26:25 IST" name="Go Rest API Test" finished-at="2023-11-06T18:26:29 IST" duration-ms="3332">
+    <test started-at="2023-11-07T18:15:51 IST" name="Go Rest get API Test" finished-at="2023-11-07T18:15:55 IST" duration-ms="3893">
       <class name="com.qa.gorest.tests.GetUserTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.gorest.tests.GetUserTest@5158b42f]" started-at="2023-11-06T18:26:25 IST" name="setUp" finished-at="2023-11-06T18:26:26 IST" duration-ms="529" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.gorest.tests.GetUserTest@2766ca9d]" started-at="2023-11-07T18:15:51 IST" name="setUp" finished-at="2023-11-07T18:15:52 IST" duration-ms="356" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,147 +18,125 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="getAllUsersTst()[pri:0, instance:com.qa.gorest.tests.GetUserTest@5158b42f]" started-at="2023-11-06T18:26:26 IST" name="getAllUsersTst" finished-at="2023-11-06T18:26:28 IST" duration-ms="2084" status="PASS">
+        <test-method is-config="true" signature="getSetUp()[pri:0, instance:com.qa.gorest.tests.GetUserTest@2766ca9d]" started-at="2023-11-07T18:15:52 IST" name="getSetUp" finished-at="2023-11-07T18:15:52 IST" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSetUp -->
+        <test-method signature="getAllUsersTst()[pri:0, instance:com.qa.gorest.tests.GetUserTest@2766ca9d]" started-at="2023-11-07T18:15:52 IST" name="getAllUsersTst" finished-at="2023-11-07T18:15:54 IST" duration-ms="1771" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAllUsersTst -->
-        <test-method signature="getUserTest()[pri:0, instance:com.qa.gorest.tests.GetUserTest@5158b42f]" started-at="2023-11-06T18:26:28 IST" name="getUserTest" finished-at="2023-11-06T18:26:28 IST" duration-ms="421" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <200> but was <400>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <400>.
-
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at com.qa.gorest.tests.GetUserTest.getUserTest(GetUserTest.java:31)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method is-config="true" signature="getSetUp()[pri:0, instance:com.qa.gorest.tests.GetUserTest@2766ca9d]" started-at="2023-11-07T18:15:54 IST" name="getSetUp" finished-at="2023-11-07T18:15:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSetUp -->
+        <test-method signature="getUserTest()[pri:0, instance:com.qa.gorest.tests.GetUserTest@2766ca9d]" started-at="2023-11-07T18:15:54 IST" name="getUserTest" finished-at="2023-11-07T18:15:55 IST" duration-ms="1047" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserTest -->
-        <test-method signature="getUserWithQueryParamsTest()[pri:0, instance:com.qa.gorest.tests.GetUserTest@5158b42f]" started-at="2023-11-06T18:26:28 IST" name="getUserWithQueryParamsTest" finished-at="2023-11-06T18:26:29 IST" duration-ms="256" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <200> but was <400>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <400>.
-
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at com.qa.gorest.tests.GetUserTest.getUserWithQueryParamsTest(GetUserTest.java:44)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method is-config="true" signature="getSetUp()[pri:0, instance:com.qa.gorest.tests.GetUserTest@2766ca9d]" started-at="2023-11-07T18:15:55 IST" name="getSetUp" finished-at="2023-11-07T18:15:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSetUp -->
+        <test-method signature="getUserWithQueryParamsTest()[pri:0, instance:com.qa.gorest.tests.GetUserTest@2766ca9d]" started-at="2023-11-07T18:15:55 IST" name="getUserWithQueryParamsTest" finished-at="2023-11-07T18:15:55 IST" duration-ms="410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserWithQueryParamsTest -->
       </class> <!-- com.qa.gorest.tests.GetUserTest -->
-    </test> <!-- Go Rest API Test -->
-    <test started-at="2023-11-06T18:26:29 IST" name="Circuit API Test" finished-at="2023-11-06T18:26:30 IST" duration-ms="893">
+    </test> <!-- Go Rest get API Test -->
+    <test started-at="2023-11-07T18:15:55 IST" name="Go Rest create API Test" finished-at="2023-11-07T18:15:59 IST" duration-ms="3324">
+      <class name="com.qa.gorest.tests.CreateUserTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.gorest.tests.CreateUserTest@7ac0e420]" started-at="2023-11-07T18:15:55 IST" name="setUp" finished-at="2023-11-07T18:15:55 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://gorest.co.in]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="getUserSetUp()[pri:0, instance:com.qa.gorest.tests.CreateUserTest@7ac0e420]" started-at="2023-11-07T18:15:55 IST" name="getUserSetUp" finished-at="2023-11-07T18:15:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserSetUp -->
+        <test-method signature="getAllUsersTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.gorest.tests.CreateUserTest@7ac0e420]" started-at="2023-11-07T18:15:55 IST" name="getAllUsersTest" data-provider="getUserTestData" finished-at="2023-11-07T18:15:57 IST" duration-ms="1212" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[male]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[inactive]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsersTest -->
+        <test-method is-config="true" signature="getUserSetUp()[pri:0, instance:com.qa.gorest.tests.CreateUserTest@7ac0e420]" started-at="2023-11-07T18:15:57 IST" name="getUserSetUp" finished-at="2023-11-07T18:15:57 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserSetUp -->
+        <test-method signature="getAllUsersTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.gorest.tests.CreateUserTest@7ac0e420]" started-at="2023-11-07T18:15:57 IST" name="getAllUsersTest" data-provider="getUserTestData" finished-at="2023-11-07T18:15:58 IST" duration-ms="1040" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kar12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[active]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsersTest -->
+        <test-method is-config="true" signature="getUserSetUp()[pri:0, instance:com.qa.gorest.tests.CreateUserTest@7ac0e420]" started-at="2023-11-07T18:15:58 IST" name="getUserSetUp" finished-at="2023-11-07T18:15:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserSetUp -->
+        <test-method signature="getAllUsersTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.gorest.tests.CreateUserTest@7ac0e420]" started-at="2023-11-07T18:15:58 IST" name="getAllUsersTest" data-provider="getUserTestData" finished-at="2023-11-07T18:15:59 IST" duration-ms="1044" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sevb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[male]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[active]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsersTest -->
+      </class> <!-- com.qa.gorest.tests.CreateUserTest -->
+    </test> <!-- Go Rest create API Test -->
+    <test started-at="2023-11-07T18:15:59 IST" name="Circuit API Test" finished-at="2023-11-07T18:16:00 IST" duration-ms="1355">
       <class name="com.qa.gorest.tests.CircuitTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.gorest.tests.CircuitTest@34a3d150]" started-at="2023-11-06T18:26:29 IST" name="setUp" finished-at="2023-11-06T18:26:29 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.gorest.tests.CircuitTest@503ecb24]" started-at="2023-11-07T18:15:59 IST" name="setUp" finished-at="2023-11-07T18:15:59 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -169,7 +147,11 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="getCircuitTest()[pri:0, instance:com.qa.gorest.tests.CircuitTest@34a3d150]" started-at="2023-11-06T18:26:29 IST" name="getCircuitTest" finished-at="2023-11-06T18:26:30 IST" duration-ms="885" status="PASS">
+        <test-method is-config="true" signature="getSetUp()[pri:0, instance:com.qa.gorest.tests.CircuitTest@503ecb24]" started-at="2023-11-07T18:15:59 IST" name="getSetUp" finished-at="2023-11-07T18:15:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSetUp -->
+        <test-method signature="getCircuitTest()[pri:0, instance:com.qa.gorest.tests.CircuitTest@503ecb24]" started-at="2023-11-07T18:15:59 IST" name="getCircuitTest" finished-at="2023-11-07T18:16:00 IST" duration-ms="1346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCircuitTest -->

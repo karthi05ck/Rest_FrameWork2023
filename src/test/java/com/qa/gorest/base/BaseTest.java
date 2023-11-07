@@ -12,10 +12,15 @@ import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
 
 public class BaseTest {
+	
+	//service URLS:
+	public static final String GOREST_ENDPOINT = "/public/v2/users";
+	public static final String CIRCUIT_ENDPOINT = "/api/f1/2019/circuits.json";
 
 	protected ConfigurationManager config;
 	protected Properties prop;
 	protected RestClient restClient;
+	protected String baseURI;
 	
 	@Parameters({"baseURI"})
 	@BeforeTest
@@ -27,7 +32,8 @@ public class BaseTest {
 		config = new ConfigurationManager();
 		prop = config.init_prop();
 		//String baseURI = prop.getProperty("baseURI");
-		restClient = new RestClient(prop, baseURI);
+		this.baseURI=baseURI;
+		//restClient = new RestClient(prop, baseURI);
 		
 	}
 }
