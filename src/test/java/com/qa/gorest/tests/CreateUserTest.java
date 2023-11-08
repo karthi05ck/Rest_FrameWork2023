@@ -28,6 +28,7 @@ public class CreateUserTest extends BaseTest {
 			{"kar", "male", "inactive"},
 			{"kar12", "female", "active"},
 			{"sevb", "male", "active"},
+			{"se82b", "female", "active"},
 		};
 	}
 	

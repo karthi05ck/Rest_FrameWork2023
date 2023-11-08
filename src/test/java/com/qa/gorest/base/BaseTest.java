@@ -34,6 +34,7 @@ public class BaseTest {
 		//String baseURI = prop.getProperty("baseURI");
 		this.baseURI=baseURI;
 		//restClient = new RestClient(prop, baseURI);
+		//testing
 		
 	}
 }
